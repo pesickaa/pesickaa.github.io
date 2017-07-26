@@ -4,7 +4,7 @@ body { margin: 60px auto; width: 70%; background-color: #e6ccff;}
 a { text-decoration: none; color: #999; }
 a:hover { text-decoration: underline; }
 
-p, ul { font-size: 1.5em; line-height: 1.4em; color: #333; }
+p, ul { font-size: 1.2em; line-height: 1.4em; color: #333; }
 
 h1, h2, h3, h4 { font-family: 'Helvetica', 'Arial', 'Sans-Serif'; }
 h1 { font-size: 3em;  }
@@ -28,7 +28,7 @@ ul.posts li { list-style: none; }
 .cv address, .cv .download { font-family: 'Helvetica', 'Arial', 'Sans-Serif'; }
 .cv address, .cv p { font-size: 1.2em; }
 .cv education, .cv p { font-size: 1.2em; }
-.cv skills, .cv p , .cv ul li { margin: 20px auto 40px; font-size: 1.2em; list-style: none;}
+.cv skills, .cv p , .cv ul li { margin: 20px auto 40px; font-size: 1.2em; line-height: 1.2em; list-style: none;}
 .cv .download { float: right; font-size: .8em; text-transform: uppercase; }
 
 
