@@ -43,7 +43,7 @@ ul.posts li { list-style: none; }
 }
 
 .mySlides {
-    display: inline;
+    display: none;
 }
 
 /* Next & previous buttons */
