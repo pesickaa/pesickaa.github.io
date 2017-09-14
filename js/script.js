@@ -40,19 +40,19 @@ myApp.config(['$routeProvider', function ($routeProvider) {
     'use strict';
 
     $routeProvider
-        .when('/page1', {
-            templateUrl: 'page1.html'
+        .when('/Home', {
+            templateUrl: 'Home.html'
         })
-        .when('/page2', {
-            templateUrl: 'page2.html'
+        .when('/About', {
+            templateUrl: 'About.html'
         })
-        .when('/page3', {
-            templateUrl: 'page3.html'
+        .when('/CV', {
+            templateUrl: 'CV.html'
         })
-        .when('/page4', {
-            templateUrl: 'page4.html'
+        .when('/art_portfolio', {
+            templateUrl: 'art_portfolio.html'
         })
         .otherwise({
-           templateUrl: 'page1.html' 
+           templateUrl: 'Home.html' 
         });
 }]);
