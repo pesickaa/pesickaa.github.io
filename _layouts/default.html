@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-	<html>
+	<html ng-app="myApp">
 		<head>
 		<meta charset="UTF-8">
 			<title>{{ page.title }}</title>
@@ -12,28 +12,128 @@
 			<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
 
 		</head>
-		<body>
-			<header>
-			<nav>
-	    			<ul>
-	        			<li><a href="/">Home</a></li>
-		        		<li><a href="/about">About</a></li>
-	        			<li><a href="/cv">CV</a></li>
-	        			<li><a href="/blog">Blog</a></li>
-					<li><a href="/art_portfolio">Art Portfolio</a></li>
-	    			</ul>
-				</nav>
-				<h1> Alexis Pesicka</h1>
-			</header>
-			<div class="container">
-			
-			{{ content }}
-			
-			</div><!-- /.container -->
-			<footer>
-	    		<ul>
-	        		<li><a href="mailto:alexis.pesicka@gmail.com">email</a></li>
-	        		<li><a href="https://github.com/pesickaa">github.com/pesickaa</a></li>
-				</ul>
-			</footer>
-		</body>
+
+
+    		<body>
+    
+        	<header>
+        		<nav>
+            			<a ng-click="go('/Home', 'slideLeft')">Home</a>
+            			<a ng-click="go('/About', 'slideRight')">About</a>
+            			<a ng-click="go('/CV', 'slideDown')">CV</a>
+            			<a ng-click="go('/art_portfolio','slideUp')">Art Portfolio</a> 
+        		</nav>
+			<h1> Alexis Pesicka</h1>
+	    	</header>
+    
+        <!-- App Content Container -->
+        <div class="page-container">
+            <div ng-view="" class="page-view" ng-class="pageAnimationClass"></div>
+        </div>
+    
+        <!-- Example page partials -->
+        <script type="text/ng-template" id="Index.html">
+            <div id="Home" class="pages">
+                <h4>Computer Scientist by day, starving artist by Night</h4>
+		<p>Just graduated from University of Victoria, my life currently consists of trying to find a job and trying to get rid of paintings. <a href="/about">More about me here...</a></p>
+            </div>
+        </script>
+    
+        <script type="text/ng-template" id="About.html">
+            <div id="About" class="pages">
+                <h4> About me</h4>
+		<p>BSc Combined: Computer Science / Visual Arts</p>
+		<p>Learning many different programming languages as I go along</p>
+			<ul class="contacts">
+				<li><a href="#">@SilverDivinity</a></li>			
+				<li><a href="#">https://www.facebook.com/Divine.Shadow</a></li>	
+				<!--  <li><a href="#">Another site you want to link to</a></li> -->
+			</ul>
+
+                <!--<code>&lt;a ng-click="go('/page3', 'slideUp')"&gt;Slide up Page 3&lt;/a&gt;</code>-->
+            </div>
+        </script>
+    
+	    
+	    
+        <script type="text/ng-template" id="CV.html">
+            <div id="CV" class="pages">
+                	<!-- <a href="#" class="download" title="Download CV as PDF">Download CV</a>	-->
+		<address>
+			<strong>Computer Scientist/Visual Artist</strong><br>
+			Victoria, BC<br>
+			<span class="obfuscate">alexis.pesicka@gmail.com</span>
+		</address>
+	
+		<education>
+			<br><strong>Education</strong><br>
+			University of Victoria, Bachelor of Science: Combined Major in Computer Science and Visual Arts<br>
+			Attended: September 2013 to June 2017<br>
+			Graduated as of November 2017<br>
+		</education>
+	
+		<skills>
+			<br><strong>Skillset</strong><br>
+			Object Oriented Programming: Java, C++<br>
+			HTML, JavaScript, CSS<br>
+			Software and Design Architectures	<br>	
+		</skills>
+            </div>
+        </script>
+        
+	    
+	    
+        <script type="text/ng-template" id="art_portfolio.html">
+            <div id="art_portfolio" class="pages">
+                	<h4>Art Portfolio</h4>
+
+		<div class="slideshow-container">
+  		<div class="mySlides fade">
+  		
+			<div class="numbertext">1 / 3</div>
+  				<img src="/photos/Thumbface.jpg" style="width:100%">
+    				<div class="text">Thumbface</div>
+  			</div>
+
+  			<div class="mySlides fade">
+    				<div class="numbertext">2 / 3</div>
+    				<img src="/photos/Spiraling_down.jpg" style="width:100%">
+    				<div class="text">Spiraling Downward</div>
+  			</div>
+
+  			<div class="mySlides fade">
+    				<div class="numbertext">3 / 3</div>
+    				<img src="/photos/Texture_Color.jpg" style="width:100%">
+    				<div class="text">Texture and Color</div>
+  			</div>
+
+  			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+			<br>
+
+			<div style="text-align:center">
+			<span class="dot" onclick="currentSlide(1)"></span> 
+			<span class="dot" onclick="currentSlide(2)"></span> 
+			<span class="dot" onclick="currentSlide(3)"></span> 
+		</div>
+    
+            </div>
+        </script>
+	    
+	<footer>
+	     <ul>
+	        <li><a href="mailto:alexis.pesicka@gmail.com">email</a></li>
+		<li><a href="https://github.com/pesickaa">github.com/pesickaa</a></li>
+	     </ul>
+	</footer>
+    
+        <!-- Scripts -->
+        <script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
+        <script src="https://code.angularjs.org/1.2.0/angular.js"></script>
+        <script src="https://code.angularjs.org/1.2.0/angular-route.js"></script>
+        <script src="https://code.angularjs.org/1.2.0/angular-animate.js"></script>
+        <script src="script.js"></script>
+    </body>
+
+</html>
