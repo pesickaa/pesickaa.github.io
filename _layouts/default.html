@@ -10,23 +10,11 @@
 			<!-- FAVICON, WHY WON'T YOU WORK -->
 			<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
 			<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
-			
 
-
-			<!--<script language="javascript">-->
-			<script>
-			function change(page){
-    				document.getElementById('mainframe').className="faded";
-    				setTimeout(function(){
-        			document.getElementById('mainframe').src=page+'.html';
-        			document.getElementById('mainframe').className="normal";
-    				}, (2 * 1000));
-			}
-		</script>
 		</head>
 		<body>
-			<nav>
-	    		<ul>
+			<nav id="page">
+	    		<ul id="list_nav">
 	        		<li><a href="/">Home</a></li>
 		        	<li><a href="/about">About</a></li>
 	        		<li><a href="/cv">CV</a></li>
