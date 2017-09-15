@@ -12,40 +12,20 @@
 			<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
 
 		</head>
+
 		<body>
 			<header>
 			<nav>
 	    			<ul>
-	        			<li><a href="/">Home</a></li>
-		        		<li><a href="/about">About</a></li>
-	        			<li><a href="/cv">CV</a></li>
-	        			<li><a href="/blog">Blog</a></li>
-					<li><a href="/art_portfolio">Art Portfolio</a></li>
+                			<li><a ng-click="go('/Home', 'slideLeft')">Home</a></li>
+		        		<li><a ng-click="go('/About', 'slideRight')">About</a></li>
+	        			<li><a ng-click="go('/CV', 'slideDown')">CV</a></li>
+					<li><a ng-click="go('/art_portfolio','slideUp')">Art Portfolio</a></li>
 	    			</ul>
-				</nav>
+			</nav>
 				<h1> Alexis Pesicka</h1>
 			</header>
-			<div class="container">
-			
-			{{ content }}
-			
-			</div><!-- /.container -->
-
-		</body>
-
-
-
-
-    <body>
-    
-        <!-- Header -->
-        <nav>
-            <a ng-click="go('/Home', 'slideLeft')">Home</a>
-            <a ng-click="go('/About', 'slideRight')">About</a>
-            <a ng-click="go('/CV', 'slideDown')">CV</a>
-            <a ng-click="go('/art_portfolio','slideUp')">Art Portfolio</a> 
-        </nav>
-    
+      
         <!-- App Content Container -->
         <div class="page-container">
             <div ng-view="" class="page-view" ng-class="pageAnimationClass"></div>
@@ -61,6 +41,7 @@
     
         <script type="text/ng-template" id="About.html">
             <div id="About" class="pages">
+
                 		<h4> About me</h4>
 		<p>BSc Combined: Computer Science / Visual Arts</p>
 		<p>Learning many different programming languages as I go along</p>
