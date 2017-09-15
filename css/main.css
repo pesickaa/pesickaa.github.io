@@ -189,6 +189,7 @@ ul.posts li { list-style: none; }
 
     width: 100%;
     height: 100%;
+    color: #000;
 
     /*backface-visibility*/
 
@@ -206,8 +207,9 @@ ul.posts li { list-style: none; }
 }
 .pages
 {
-    height: inherit;
+    height: 100%;
     padding: 2rem;
+    font-color: #000;
 }
 #Home
 {
