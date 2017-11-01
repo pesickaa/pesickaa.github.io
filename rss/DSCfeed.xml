@@ -3,7 +3,7 @@
 <rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Events organized by Digital Scholarship Commons for November</title>
-    <link>https://pesickaa.github.io/rss/DSCfeed.xml</link>
+    <link>"https://pesickaa.github.io/rss/DSCfeed.xml"</link>
     <description>UVic Libraries Digital Scholarship Commons Makerspace November Workshops</description>
     <language>en-US</language>
     <copyright>Copyright (c) 2010 Eventbrite, Inc.  All rights reserved.  Use subject to terms of use: http://www.eventbrite.com/tos</copyright>
@@ -11,6 +11,7 @@
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
     <ttl>60</ttl>
     <atom:link href="https://pesickaa.github.io/rss/DSCfeed.xml" rel="self" type="application/rss+xml" />
+	<lastBuildDate>1-11-2017</lastBuildDate>
     
     <item>
       <title>3D Printing Part 2: Makerbot Print for UVic Libraries&#39; DSC Makerspace - November 2, 2017</title>
@@ -38,7 +39,6 @@
         <a href="https://www.eventbrite.com/e/3d-printing-part-2-makerbot-print-for-uvic-libraries-dsc-makerspace-november-2-2017-tickets-39238700008?aff=rss">Here</a><br />
       ]]></content:encoded>
       <category>Events</category>
-      <!--<pubDate>Tue, 24 Oct 2017 15:51:13 +0000</pubDate>-->
       <guid isPermaLink="true">https://www.eventbrite.com/e/3d-printing-part-2-makerbot-print-for-uvic-libraries-dsc-makerspace-november-2-2017-tickets-39238700008?aff=rss</guid>
     </item>
 	
@@ -68,7 +68,6 @@
         <a href="https://www.eventbrite.com/e/introduction-to-electronics-with-arduino-for-uvic-libraries-dsc-makerspace-november-3-2017-tickets-38062603271?aff=rss">Here</a><br />
       ]]></content:encoded>
       <category>Events</category>
-      <!--<pubDate>Tue, 17 Oct 2017 15:51:45 +0000</pubDate>-->
       <guid isPermaLink="true">https://www.eventbrite.com/e/introduction-to-electronics-with-arduino-for-uvic-libraries-dsc-makerspace-november-3-2017-tickets-38062603271?aff=rss</guid>
     </item>
 	
@@ -98,7 +97,6 @@
         <a href="https://www.eventbrite.com/e/introduction-to-interactive-nonlinear-stories-with-twine-for-uvic-libraries-dsc-makerspace-november-tickets-39239104217?aff=rss">Here</a><br />
       ]]></content:encoded>
       <category>Events</category>
-      <!--<pubDate>Tue, 24 Oct 2017 16:15:46 +0000</pubDate>-->
       <guid isPermaLink="true">https://www.eventbrite.com/e/introduction-to-interactive-nonlinear-stories-with-twine-for-uvic-libraries-dsc-makerspace-november-tickets-39239104217?aff=rss</guid>
     </item>
 	
@@ -128,7 +126,6 @@
         <a href="https://www.eventbrite.com/e/3d-printing-part-1-design-with-tinkercad-for-uvic-libraries-dsc-makerspace-november-8-2017-tickets-39237902623?aff=rss">Here</a><br />
       ]]></content:encoded>
       <category>Events</category>
-      <!--<pubDate>Tue, 24 Oct 2017 15:14:40 +0000</pubDate>-->
       <guid isPermaLink="true">https://www.eventbrite.com/e/3d-printing-part-1-design-with-tinkercad-for-uvic-libraries-dsc-makerspace-november-8-2017-tickets-39237902623?aff=rss</guid>
     </item>
 	
@@ -158,7 +155,6 @@
         <a href="https://www.eventbrite.com/e/3d-printing-part-2-makerbot-print-for-uvic-libraries-dsc-makerspace-november-8-2017-tickets-39238741131?aff=rss">Here</a><br />
       ]]></content:encoded>
       <category>Events</category>
-      <!--<pubDate>Tue, 24 Oct 2017 15:56:22 +0000</pubDate>-->
       <guid isPermaLink="true">https://www.eventbrite.com/e/3d-printing-part-2-makerbot-print-for-uvic-libraries-dsc-makerspace-november-8-2017-tickets-39238741131?aff=rss</guid>
     </item>
 	
@@ -188,7 +184,6 @@
         <a href="https://www.eventbrite.com/e/3d-printing-part-1-design-with-tinkercad-for-uvic-libraries-dsc-makerspace-november-15-2017-tickets-39238019974?aff=rss">Here</a><br />
       ]]></content:encoded>
       <category>Events</category>
-      <!--<pubDate>Tue, 24 Oct 2017 15:45:47 +0000</pubDate>-->
       <guid isPermaLink="true">https://www.eventbrite.com/e/3d-printing-part-1-design-with-tinkercad-for-uvic-libraries-dsc-makerspace-november-15-2017-tickets-39238019974?aff=rss</guid>
     </item>
 	
@@ -218,7 +213,6 @@
         <a href="https://www.eventbrite.com/e/3d-printing-part-2-makerbot-print-for-uvic-libraries-dsc-makerspace-november-16-2017-tickets-39238825383?aff=rss">Here</a><br />
       ]]></content:encoded>
       <category>Events</category>
-      <!--<pubDate>Tue, 24 Oct 2017 15:59:11 +0000</pubDate>-->
       <guid isPermaLink="true">https://www.eventbrite.com/e/3d-printing-part-2-makerbot-print-for-uvic-libraries-dsc-makerspace-november-16-2017-tickets-39238825383?aff=rss</guid>
     </item>
 	
@@ -248,7 +242,6 @@
         <a href="https://www.eventbrite.com/e/introduction-to-electronics-with-arduino-for-uvic-libraries-dsc-makerspace-november-17-2017-tickets-39232172484?aff=rss">Here</a><br />
       ]]></content:encoded>
       <category>Events</category>
-      <!--<pubDate>Tue, 24 Oct 2017 12:44:11 +0000</pubDate>-->
       <guid isPermaLink="true">https://www.eventbrite.com/e/introduction-to-electronics-with-arduino-for-uvic-libraries-dsc-makerspace-november-17-2017-tickets-39232172484?aff=rss</guid>
     </item>
 	
@@ -278,7 +271,7 @@
         <a href="https://www.eventbrite.com/e/3d-printing-part-1-design-with-tinkercad-for-uvic-libraries-dsc-makerspace-november-21-2017-tickets-39238632807?aff=rss">Here</a><br />
       ]]></content:encoded>
       <category>Events</category>
-      <!--<pubDate>Tue, 24 Oct 2017 15:48:16 +0000</pubDate>-->
+
       <guid isPermaLink="true">https://www.eventbrite.com/e/3d-printing-part-1-design-with-tinkercad-for-uvic-libraries-dsc-makerspace-november-21-2017-tickets-39238632807?aff=rss</guid>
     </item>
 	
@@ -308,7 +301,6 @@
         <a href="https://www.eventbrite.com/e/3d-printing-part-2-makerbot-print-for-uvic-libraries-dsc-makerspace-november-21-2017-tickets-39238999905?aff=rss">Here</a><br />
       ]]></content:encoded>
       <category>Events</category>
-      <!--<pubDate>Tue, 24 Oct 2017 16:11:40 +0000</pubDate>-->
       <guid isPermaLink="true">https://www.eventbrite.com/e/3d-printing-part-2-makerbot-print-for-uvic-libraries-dsc-makerspace-november-21-2017-tickets-39238999905?aff=rss</guid>
     </item>
 	
@@ -338,7 +330,6 @@
         <a href="https://www.eventbrite.com/e/introduction-to-electronics-with-arduino-for-uvic-libraries-dsc-makerspace-november-29-2017-tickets-39232416213?aff=rss">Here</a><br />
       ]]></content:encoded>
       <category>Events</category>
-      <!--<pubDate>Tue, 24 Oct 2017 11:59:49 +0000</pubDate>-->
       <guid isPermaLink="true">https://www.eventbrite.com/e/introduction-to-electronics-with-arduino-for-uvic-libraries-dsc-makerspace-november-29-2017-tickets-39232416213?aff=rss</guid>
     </item>
 	
@@ -366,7 +357,6 @@
         <b>Register for this event now by clicking: </b><a href="https://www.eventbrite.com/e/introduction-to-interactive-nonlinear-stories-with-twine-for-uvic-libraries-dsc-makerspace-december-tickets-39239134307?aff=rss">Here</a><br />
 		]]></content:encoded>
       <category>Events</category>
-      <!--<pubDate>Tue, 24 Oct 2017 16:18:08 +0000</pubDate>-->
       <guid isPermaLink="true">https://www.eventbrite.com/e/introduction-to-interactive-nonlinear-stories-with-twine-for-uvic-libraries-dsc-makerspace-december-tickets-39239134307?aff=rss</guid>
     </item>
 	
