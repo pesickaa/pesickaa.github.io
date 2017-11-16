@@ -28,6 +28,7 @@ ul.posts li { list-style: none; }
 .cv address, .cv p { font-size: 1.2em; }
 .cv education, .cv p { font-size: 1.2em; }
 .cv skills, .cv p , .cv ul li { margin: 20px auto 40px; font-size: 1.2em; line-height: 1.2em; list-style: none;}
+.cv work, .cv p { font-size: 1.2em; }
 .cv .download { float: right; font-size: .8em; text-transform: uppercase; }
 
 
