@@ -5,11 +5,21 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width = device-width, initial-scale = 1">
 			<!-- link to main stylesheet -->
-			<link rel="stylesheet" type="text/css" href="/css/main.css">
-			<link rel="stylesheet" type="text/css" href="/css/style6.css">
+			<!--<link rel="stylesheet" type="text/css" href="/css/main.css">-->
 			<link rel="stylesheet" href="css/bootstrap.css">
 			<script src="/js/slideshow.js"></script>
-			
+			<script src="lib/jquery-1.6.4.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.4/moment.min.js"></script>
+			<script src="src/jquery.rss.js"></script>
+			<script>
+			jQuery(function($) {
+				$("#rss-feeds").rss("http://www.eventbrite.com/rss/organizer_list_events/13205636880", {
+					limit: 15,
+					effect: 'slideFastSynced'
+					})
+				})
+			</script>
+	
 			<!-- FAVICON, WHY WON'T YOU WORK -->
 			<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
 
@@ -23,10 +33,10 @@
 						<a class="navbar-brand" href="index.html">Alexis Pesicka</a>
 					</div>
 					<ul class="nav navbar-nav">
-						<li><a href="index.html">Home</a></li>
-						<li><a href="about.html">About</a></li>
-						<li><a href="art_portfolio.html">Art Portfolio</a></li>
-						<li><a href="cv.html">CV</a></li>
+						<li class="inactive"><a href="index.html">Home</a></li>
+						<li class="inactive"><a href="about.html">About</a></li>
+						<li class="inactive"><a href="art_portfolio.html">Art Portfolio</a></li>
+						<li class="inactive"><a href="cv.html">CV</a></li>
 						<li class="active"><a href="projects.html">Projects</a></li>
 					</ul>
 				</div>
@@ -46,77 +56,34 @@
 						<p id="display"></p>
 					</div>
 					
-					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-						<!-- start sw-rss-feed code --> 
-						<script type="text/javascript"> 
-						
-						rssfeed_url = new Array(); 
-						rssfeed_url[0]="https://pesickaa.github.io/rss/DSCfeed.xml";  
-						rssfeed_frame_width="400"; 
-						rssfeed_frame_height="300"; 
-						rssfeed_scroll="on"; 
-						rssfeed_scroll_step="6"; 
-						rssfeed_scroll_bar="off"; 
-						rssfeed_target="_blank"; 
-						rssfeed_font_size="12"; 
-						rssfeed_font_face=""; 
-						rssfeed_border="on"; 
-						rssfeed_css_url="https://pesickaa.github.io/css/style6.css"; 
-						rssfeed_title="on"; 
-						rssfeed_title_name="Digital Scholarship Commons Events for November"; 
-						rssfeed_title_bgcolor="#3366ff"; 
-						rssfeed_title_color="#fff"; 
-						rssfeed_title_bgimage=""; 
-						rssfeed_footer="off"; 
-						rssfeed_footer_name="rss feed"; 
-						rssfeed_footer_bgcolor="#fff"; 
-						rssfeed_footer_color="#333"; 
-						rssfeed_footer_bgimage=""; 
-						rssfeed_item_title_length="120"; 
-						rssfeed_item_title_color="#666"; 
-						rssfeed_item_bgcolor="#fff"; 
-						rssfeed_item_bgimage=""; 
-						rssfeed_item_border_bottom="on"; 
-						rssfeed_item_source_icon="off"; 
-						rssfeed_item_date="off"; 
-						rssfeed_item_description="on"; 
-						rssfeed_item_description_length="75"; 
-						rssfeed_item_description_color="#666"; 
-						rssfeed_item_description_link_color="#333"; 
-						rssfeed_item_description_tag="off"; 
-						rssfeed_no_items="0"; 
-						rssfeed_cache = "6625f6bd62b29ee9a7a5bca514fd35e1"; 
-						//--> 
-						</script> 
-						<script type="text/javascript" src="//feed.surfing-waves.com/js/rss-feed.js"></script> 
-						<!-- The link below helps keep this service FREE, and helps other people find the SW widget. Please be cool and keep it! Thanks. --> 
-						<div style="text-align:right; width:400px;"><a href="http://www.surfing-waves.com/feed.htm" target="_blank" style="color:#ccc;font-size:10px">feedwidget @</a> <a href="http://www.surfing-waves.com" target="_blank" style="color:#ccc;font-size:10px">Surfing Waves</a></div> 
-						<!-- end sw-rss-feed code -->
+					<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
+						<h1>Digital Scholarship Commons Workshops</h1>
+						<div id="rss-feeds"></div>
 					</div>
+				
 				</div>
 				
 				<div class="row">
 					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-						<p>This is a new row. </p>
-					</div>					
+						<h1>New Row</h1>
+					</div>
 				</div>
+				
 				
 			</div>
 
 	<footer>
 	     <ul>
 	        <li><a href="mailto:alexis.pesicka@gmail.com">email</a></li>
-		<li><a href="https://github.com/pesickaa">github.com/pesickaa</a></li>
-		     <li><a href="https://pesickaa.github.io/rss/DSCfeed.xml">
-<img src="https://www.w3schools.com/xml/pic_rss.gif" width="36" height="14">
-</a></li>
+			<li><a href="https://github.com/pesickaa">github.com/pesickaa</a></li>
+		    <li><a href="http://www.eventbrite.com/rss/organizer_list_events/13205636880"><img src="https://www.w3schools.com/xml/pic_rss.gif" width="36" height="14"></a></li>
 	     </ul>
 	</footer>
 	
 	<script src="./index_files/jquery.min.js.download"></script>
  
-		<!-- Use downloaded version of Bootstrap -->
-		<script src="/bootstrap.min.js.download"></script>
+	<!-- Use downloaded version of Bootstrap -->
+	<script src="/bootstrap.min.js.download"></script>
     
 
 </body></html>
