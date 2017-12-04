@@ -34,8 +34,8 @@
 					</div>
 					<ul class="nav navbar-nav">
 						<li><a href="index.html">Home</a></li>
-						<li><a href="about.html">About</a></li>
-						<li><a href="art_portfolio.html">Art Portfolio</a></li>
+						<!--<li><a href="about.html">About</a></li>-->
+						<!--<li><a href="art_portfolio.html">Art Portfolio</a></li>-->
 						<li><a href="cv.html">CV</a></li>
 						<li class="active"><a href="projects.html">Projects</a></li>
 					</ul>
@@ -64,8 +64,53 @@
 				</div>
 				
 				<div class="row">
-					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-						<h1>New Row</h1>
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<div class="container">
+							<h4>Art Portfolio</h4>
+								<div id="ImgCarousel" class="carousel slide" data-ride="carousel">
+									<ol class="carousel-indicators">
+										<li data-target="#ImgCarousel" data-slide-to="0" class="active"></li>
+										<li data-target="#ImgCarousel" data-slide-to="1"></li>
+										<li data-target="#ImgCarousel" data-slide-to="2"></li>
+									</ol>
+						
+									<div class="carousel-inner">
+										<div class="item active">
+											<div class="slide1">
+												<div class="carousel-inner">
+													<h1>Thumbface</h1>
+													<img src="photos/Thumbface.jpg" class="img-responsive center-block" alt="Thumbface"> 
+												</div>
+											</div>
+										</div>
+							
+										<div class="item">
+											<div class="slide2">
+												<div class="carousel-inner">
+													<h1>Spiraling Down</h1>
+													<img src="photos/Spiraling_down.jpg" class="img-responsive center-block" alt="Spiraling Down"> 
+												</div>
+											</div>
+										</div>
+							
+										<div class="item">
+											<div class="slide3">
+												<div class="carousel-inner">
+													<h1>Texture and Color</h1>
+													<img src="photos/Texture_Color.jpg" class="img-responsive center-block" alt="Texture and Color Study"> 
+												</div>
+											</div>
+										</div>
+							
+									</div>
+						
+									<a class="left carousel-control" href="#ImgCarousel" data-slide="prev">
+									<span class="glyphicon glyphicon-chevron-left"></span></a>
+						
+									<a class="right carousel-control" href="#ImgCarousel" data-slide="next">
+									<span class="glyphicon glyphicon-chevron-right"></span></a>
+								</div>
+						</div>
 					</div>
 				</div>
 				
@@ -81,7 +126,6 @@
 	</footer>
 	
 	<script src="./index_files/jquery.min.js.download"></script>
- 
 	<!-- Use downloaded version of Bootstrap -->
 	<script src="/bootstrap.min.js.download"></script>
     
