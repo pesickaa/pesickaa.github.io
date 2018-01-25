@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $('#Library').bind('change', function() {
-        var elements = $('div.container').children().hide(); // hide all the elements
+        var elements = $('div.Folder').children().hide(); // hide all the elements
         var value = $(this).val();
 
         if (value.length) { // if somethings' selected
