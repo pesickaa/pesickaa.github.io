@@ -13,13 +13,25 @@
 	    		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.4/moment.min.js"></script>
     			<script src="src/jquery.rss.js"></script>
 			<script>
+				$(document).ready(function(){
+					$('#Library').bind('change', function() {
+						var elements = $('div.container').children().hide();
+						var value = $(this).val();
+						
+						if(value.length){
+							elements.filter('.' + value).show();
+						}
+					}).trigger('change');
+				});
+			</script>
+			<!--<script>
 			jQuery(function($) {
 				$("#rss-feeds").rss("http://www.eventbrite.com/rss/organizer_list_events/13205636880", {
 					limit: 15,
 					effect: 'slideFastSynced'
 					})
 				})
-			</script>
+			</script>-->
 	
 			<!-- FAVICON, WHY WON'T YOU WORK -->
 			<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
@@ -58,9 +70,52 @@
 					</div>
 					
 					<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
+						<select size = "1" id ="Library" title="" name="Library">
+							<option value="">See various book lists</option>
+							<option value="Start">Books I need to read</option>
+							<option value="Finished">Books already read</option>
+							<option value="Reread">Books I need to reread</option>
+						</select>
+						
+						<div class="container">
+							<div class="Start">
+								These are books I should really read
+							</div>
+							<div class="Finished">
+								These are books I have already read
+							</div>
+							<div class="Reread">
+								These are books I have already read
+							</div>
+						</div>
+						
+						<div class"container">
+							<div class="Start">
+								<select>
+									<option>Skulduggery Pleasant by Derek Landy</option>
+								</select>
+								<select>
+									<option>Thud! by Terry Pratchett</option>
+								</select>
+
+							</div>
+							<div class="Finished">
+								<select>
+									<option>The Dark Tower by Stephen King</option>
+								</select>
+							</div>
+							<div class="Reread">
+								<select>
+									<option>The Name of the Wind by Patrick Rothfuss</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<!--
+					<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
 						<h1>Digital Scholarship Commons Workshops</h1>
 						<div id="rss-feeds"></div>
-					</div>
+					</div>-->
 				
 				</div>
 				
