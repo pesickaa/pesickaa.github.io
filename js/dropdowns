@@ -1,0 +1,10 @@
+				$(document).ready(function(){
+					$('#Library').bind('change', function() {
+						var elements = $('div.container').children().hide();
+						var value = $(this).val();
+						
+						if(value.length){
+							elements.filter('.' + value).show();
+						}
+					}).trigger('change');
+				});
