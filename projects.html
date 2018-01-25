@@ -12,18 +12,7 @@
 			<script src="lib/jquery-1.6.4.min.js"></script>
 	    		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.4/moment.min.js"></script>
     			<script src="src/jquery.rss.js"></script>
-			<script>
-				$(document).ready(function(){
-					$('#Library').bind('change', function() {
-						var elements = $('div.container').children().hide();
-						var value = $(this).val();
-						
-						if(value.length){
-							elements.filter('.' + value).show();
-						}
-					}).trigger('change');
-				});
-			</script>
+			<script src="js/dropdowns.js"></script>
 	
 			<!-- FAVICON, WHY WON'T YOU WORK -->
 			<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
