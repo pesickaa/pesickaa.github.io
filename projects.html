@@ -177,6 +177,12 @@
 				
 				
 			</div>
+												
+	$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+		alwaysShowClose: true,
+               	event.preventDefault();
+                $(this).ekkoLightbox();
+        });
 
 	<footer>
 	     <ul>
@@ -189,11 +195,6 @@
 	<script src="./index_files/jquery.min.js.download"></script>
 	<!-- Use downloaded version of Bootstrap -->
 	<script src="/bootstrap.min.js.download"></script>
-								
-	$(document).on('click', '[data-toggle="lightbox"]', function(event) {
-		alwaysShowClose: true,
-               	event.preventDefault();
-                $(this).ekkoLightbox();
-        });
+
 
 </body></html>
