@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+	<html ng-app="myApp">
+		<head>
+			<meta charset="UTF-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<meta name="viewport" content="width = device-width, initial-scale = 1">
+			<link rel="stylesheet" href="css/bootstrap.css">
+			<link rel="stylesheet" href="css/ekko-lightbox.css">
+			
+			<!--Script for lightbox-->
+			<script src="js/ekko-lightbox.min.js"></script>
+			<script src="js/ekko-lightbox.js"></script>
+			
+			<!--script for Dropdowns-->
+			<script src="lib/jquery-1.6.4.min.js"></script>
+			<script src="js/dropdowns.js"></script>
+
+			<!-- FAVICON-->
+			<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+		</head>
+		
+		<body>
+			<nav class="navbar navbar-inverse">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<a class="navbar-brand" href="index.html">Alexis Pesicka</a>
+					</div>
+					<ul class="nav navbar-nav">
+						<li><a href="index.html">Home</a></li>
+						<!--<li><a href="about.html">About</a></li>-->
+						<!--<li><a href="art_portfolio.html">Art Portfolio</a></li>-->
+						<li><a href="cv.html">CV</a></li>
+						<li class="active"><a href="projects.html">Projects</a></li>
+					</ul>
+				</div>
+			</nav>
+			
+			<div class="container">
+				<div class="page-header">
+					<h4>Projects and Learning</h4>
+					<p>This page is dedicated to projects I am currently working on, or the various languages I am attempting to learn. I will be using this to reference various github projects I will be undertaking, as well as showcasing some of the various things I am learning to do with Javascript or other web-based languages.</p>
+				</div>
+				
+				<div class="row">
+					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+						<h1>Get the date</h1>
+						<button type="button" class="btn btn-default" onclick="document.getElementById('display').innerHTML = Date()">Get the date/time</button>
+						<p id="display"></p>
+					</div>
+					
+					<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
+						<h2>My Library of Books</h2>
+						<select size = "1" id ="Library" title="" name="Library">
+							<option value="">See various book lists</option>
+							<option value="Start">Books I need to read</option>
+							<option value="Finished">Books already read</option>
+							<option value="Reread">Books I need to reread</option>
+						</select>
+						
+						<div class="Folder">
+							<div class="Start">
+								These are books I should really read
+							</div>
+							<div class="Finished">
+								These are books I have already read
+							</div>
+							<div class="Reread">
+								These are books I have already read, and need to read again.
+							</div>
+						</div>
+						
+						<div class="Folder">
+							<div class="Start">
+								<select>
+									<option>Skulduggery Pleasant by Derek Landy</option>
+									<option>Thud! by Terry Pratchett</option>
+								</select>
+
+							</div>
+							<div class="Finished">
+								<select>
+									<option>The Dark Tower by Stephen King</option>
+								</select>
+							</div>
+							<div class="Reread">
+								<select>
+									<option>The Name of the Wind by Patrick Rothfuss</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="container" style="padding-bottom: 2%;">
+					<div class="row">
+						<h4>Art Portfolio</h4>
+						<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
+							<div class="row">
+								<a href="photos/Thumbface.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+									<img src="photos/Thumbface_sm.jpg" class="img-fluid" alt="Thumbface" >
+								</a>
+							
+								<a href="photos/Spiraling_down.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+									<img src="photos/Spiraling_down_sm.jpg" class="img-fluid" alt="Spiraling Down"> 
+								</a>
+							
+								<a href="photos/Texture_Color.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+									<img src="photos/Texture_Color_sm.jpg" class="img-fluid" alt="Texture and Color Study">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+			
+			<footer>
+	     			<ul>
+	        			<li><a href="mailto:alexis.pesicka@gmail.com">email</a></li>
+					<li><a href="https://github.com/pesickaa">github.com/pesickaa</a></li>
+					<li><a href="http://www.eventbrite.com/rss/organizer_list_events/13205636880"><img src="https://www.w3schools.com/xml/pic_rss.gif" width="36" height="14"></a></li>
+	    			 </ul>
+			</footer>
+					
+			<script type="text/javascript">
+                        $(document).ready(function ($) {
+                            // delegate calls to data-toggle="lightbox"
+                            $(document).on('click', '[data-toggle="lightbox"]:not([data-gallery="navigateTo"]):not([data-gallery="example-gallery-11"])', function(event) {
+                                alwaysShowClose: true,
+				event.preventDefault();
+                                return $(this).ekkoLightbox({
+                                    onShown: function() {
+                                        if (window.console) {
+                                            return console.log('Running a test');
+                                        }
+                                    },
+                                    onNavigate: function(direction, itemIndex) {
+                                        if (window.console) {
+                                            return console.log('Navigating '+direction+'. Current item: '+itemIndex);
+                                        }
+                                    }
+                                });
+                            });
+            
+                            // disable wrapping
+                            $(document).on('click', '[data-toggle="lightbox"][data-gallery="example-gallery-11"]', function(event) {
+                                event.preventDefault();
+                                return $(this).ekkoLightbox({
+                                    wrapping: false
+                                });
+                            });
+            
+                            //Programmatically call
+                            $('#open-image').click(function (e) {
+                                e.preventDefault();
+                                $(this).ekkoLightbox();
+                            });
+                            $('#open-youtube').click(function (e) {
+                                e.preventDefault();
+                                $(this).ekkoLightbox();
+                            });
+            
+                            // navigateTo
+                            $(document).on('click', '[data-toggle="lightbox"][data-gallery="navigateTo"]', function(event) {
+                                event.preventDefault();
+            
+                                return $(this).ekkoLightbox({
+                                    onShown: function() {
+            
+                                        this.modal().on('click', '.modal-footer a', function(e) {
+            
+                                            e.preventDefault();
+                                            this.navigateTo(2);
+            
+                                        }.bind(this));
+            
+                                    }
+                                });
+                            });
+            
+            
+                            /**
+                             * Documentation specific - ignore this
+                             */
+                            anchors.options.placement = 'left';
+                            anchors.add('h3');
+                            $('code[data-code]').each(function() {
+            
+                                var $code = $(this),
+                                    $pair = $('div[data-code="'+$code.data('code')+'"]');
+            
+                                $code.hide();
+                                var text = $code.text($pair.html()).html().trim().split("\n");
+                                var indentLength = text[text.length - 1].match(/^\s+/)
+                                indentLength = indentLength ? indentLength[0].length : 24;
+                                var indent = '';
+                                for(var i = 0; i < indentLength; i++)
+                                    indent += ' ';
+                                if($code.data('trim') == 'all') {
+                                    for (var i = 0; i < text.length; i++)
+                                        text[i] = text[i].trim();
+                                } else  {
+                                    for (var i = 0; i < text.length; i++)
+                                        text[i] = text[i].replace(indent, '    ').replace('    ', '');
+                                }
+                                text = text.join("\n");
+                                $code.html(text).show();
+            
+                            });
+                        });
+			</script>
+			
+			<script src="./index_files/jquery.min.js.download"></script>
+			<!-- Use downloaded version of Bootstrap -->
+			<script src="/bootstrap.min.js.download"></script>
+		</body>
+</html>
