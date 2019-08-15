@@ -17,39 +17,68 @@
 		<div id="center-wrapper" class="center">
 			<div class="box content">
 				<div id="introduction" class="section">
-					<h4>Computer Scientist by day, starving artist by night</h4>
-					<p>Just graduated from University of Victoria, my life currently consists of trying to find a job and trying to get rid of paintings.</p>
+					<button class="fold">Computer Scientist by day, starving artist by night</button>
+					<div class="panel">
+						<hr>
+						<p>Just graduated from University of Victoria, my life currently consists of trying to find a job and trying to get rid of paintings.</p>
+					</div>
 				</div>
 
 				<div id="about" class="section">
-					<h4> About me</h4>
-					<p>BSc Combined: Computer Science / Visual Arts</p>
-					<p>Learning many different programming languages as I go along.</p>
+					<button class="fold"> About me</button>
+					<div class="panel">
+						<hr>
+						<p>BSc Combined: Computer Science / Visual Arts</p>
+						<p>Learning many different programming languages as I go along.</p>
+					</div>
 				</div>
 
 				<div id="endorsements" class="section">
 					<div class="education">
-						<h4>Education</h4><br>
-						University of Victoria<br>
-						Bachelor of Science: Combined Major in Computer Science and Visual Arts<br>
-						Attended: September 2013 to June 2017<br>
-						Graduated as of November 2017<br>
+						<button class="fold">Education</button>
+						<div class="panel">
+							University of Victoria<br>
+							Bachelor of Science: Combined Major in Computer Science and Visual Arts<br>
+							Attended: September 2013 to June 2017<br>
+							Graduated as of November 2017<br>
+						</div>
 					</div>
 
 					<div class="skills">
-						<h4>Skillset</h4><br>
-						Object Oriented Programming: Java, C++<br>
-						HTML, JavaScript, CSS<br>
-						Software and Design Architectures<br>
+						<button class="fold">Skillset</button>
+						<div class="panel">
+							Object Oriented Programming: Java, C++<br>
+							HTML, JavaScript, CSS<br>
+							Software and Design Architectures
+						</div>
 					</div>
 
 					<div class="work">
-						<h4>Work Experience</h4><br>
-						Bandcamp Engineer (June 2018 - Present)<br>
-						UVic Digital Scholarship Commons: Digital Design Intern (October 2017 - March 2018)<br>
+						<button class="fold">Work Experience</button>
+						<div class="panel">
+							Bandcamp Engineer (June 2018 - Present)<br>
+							UVic Digital Scholarship Commons: Digital Design Intern (October 2017 - March 2018)
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+
+		<script>
+			var acc = document.getElementsByClassName("fold");
+			var i;
+
+			for (i = 0; i < acc.length; i++) {
+			  acc[i].addEventListener("click", function() {
+			    this.classList.toggle("active");
+			    var panel = this.nextElementSibling;
+			    if (panel.style.maxHeight){
+			      panel.style.maxHeight = null;
+			    } else {
+			      panel.style.maxHeight = panel.scrollHeight + "px";
+			    }
+			  });
+			}
+			</script>
 	</body>
 </html>
