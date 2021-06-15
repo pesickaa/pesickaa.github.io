@@ -35,6 +35,11 @@ h2, h4 {
 h4 {
 	border-bottom: 1px solid black;
 }
+
+#about small {
+	text-align: center;	
+}
+
 .header {
 	text-align: center;
 	height:60px;
