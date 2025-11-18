@@ -1,97 +1,140 @@
 <!DOCTYPE html>
-<html>
-	<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width = device-width, initial-scale = 1">
-		<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
-		<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-	</head>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width = device-width, initial-scale = 1" />
+    <link rel="stylesheet" type="text/css" href="./css/main.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./favicon-32x32.png"
+      sizes="32x32"
+    />
+  </head>
 
-	<body class="HolyGrail">
-		<div class="header">
-			<h2> Alexis Pesicka</h2>
-			<small>Computer Scientist/Visual Artist</small><small> Andover, UK</small>
-		</div>
-		<div id="center-wrapper" class="center">
-			<div class="box content">
-				<div id="about" class="section">
-					<button class="fold"> About me</button>
-					<div class="panel">
-						<small>Computer Scientist by day, starving artist by night</small>
-						<hr>
-						<p>Graduated from University of Victoria in 2017. Spending time learning more programming languages and finding balance between work and creativity.</p>
-						<div>
-							<h3>Creative Outlets</h3>
-							I have explored my creativity in many ways:
-							<ul>
-								<li>Painting on stretched canvases to painting warhammer miniatures.</li>
-								<li>Playing with 3d printers</li>
-								<li>Video Games</li>
-								<li>Collaborative writing</li>
-							</ul>
-						</div>
-					</div>
-				</div>
+  <body class="HolyGrail">
+    <div class="header">
+      <h1>Alexis Pesicka</h1>
+	  <div class="rows">
+		  <small>Computer Scientist / Visual Artist</small>
+		  <small> Hampshire, UK</small>
+	  </div>
+    </div>
+    <div id="center-wrapper" class="center">
+      <div class="box content">
+        <div id="about" class="section">
+          <button class="fold">About me</button>
+          <div class="panel">
+            <small>Computer Scientist by day, starving artist by night</small>
+            <hr />
+            <p>
+              Graduated from University of Victoria in 2017. Spending time
+              learning more programming languages and finding balance between
+              work and creativity.
+            </p>
+            <div>
+              <h3>Creative Outlets</h3>
+              I have explored my creativity in many ways:
+              <ul>
+                <li>
+                  Painting on stretched canvases to painting warhammer
+                  miniatures.
+                </li>
+                <li>Playing with 3d printers</li>
+                <li>Video Games</li>
+                <li>Collaborative writing</li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
-				<div id="endorsements" class="section">
-					<div class="education">
-						<button class="fold">Education</button>
-						<div class="panel">
-							University of Victoria<br>
-							Bachelor of Science: Combined Major in Computer Science and Visual Arts<br>
-							Attended: September 2013 to June 2017<br>
-							Graduated as of November 2017<br>
-						</div>
-					</div>
+        <div id="endorsements" class="section">
+          <div class="education">
+            <button class="fold active">Education</button>
+            <div class="panel rows">
+              <span>University of Victoria</span>
+              <span></span>Bachelor of Science: Combined Major in Computer Science and Visual
+              Arts</span>
+              <span>Attended: September 2013 to November 2017</span>
+            </div>
+          </div>
 
-					<div class="skills">
-						<button class="fold">Skillset</button>
-						<div class="panel">
-							<div>
-								<h3>Object Oriented Programming</h3>
-								Ruby, Python, Java, C++<br>
-							</div>
-							<div>
-								<h3>Front End</h3>
-								HTML, JavaScript, Typescript, CSS, SCSS, Vue, Liquid, Knockout<br>
-							</div>
-							
-							<div>
-								<h3>Other Skills</h3>
-								MySQL, Grafana, Software and Design Architectures, Working in teams and on my own.
-							</div>						
-						</div>
-					</div>
+          
 
-					<div class="work">
-						<button class="fold">Work Experience</button>
-						<div class="panel">
-							SimplyVideo Frontend Developer (July 2021 - March 2022)<br>
-							Bandcamp Engineer (June 2018 - June 2021)<br>
-							UVic Digital Scholarship Commons: Digital Design Intern (October 2017 - March 2018)
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+          <div class="work">
+            <button class="fold active">Work Experience</button>
+            <div class="panel">
+              <ul>
+                <li>Kinde Frontend Developer (July 2025 - Present)</li>
+                <li>Lavanda Frontend Developer (January 2023 - June 2025)</li>
+                <li>RealWear Frontend Developer (June 2022 - December 2022)</li>
+                <li>SimplyVideo Frontend Developer (July 2021 - March 2022)</li>
+                <li>Bandcamp Engineer (June 2018 - June 2021)</li>
+                <li>
+                  UVic Digital Scholarship Commons: Digital Design Intern
+                  (October 2017 - March 2018)
+                </li>
+              </ul>
+            </div>
+          </div>
 
-		<script>
-			var acc = document.getElementsByClassName("fold");
-			var i;
+		  <div class="skills">
+            <button class="fold">Skillset</button>
+            <div class="panel">
+              <div>
+                <h3>Frontend</h3>
+                <ul class="columns">
+                  <li>HTML</li>
+                  <li>Typescript</li>
+                  <li>CSS &amp; SCSS</li>
+                  <li>Vue</li>
+				  <li>Angular 18+</li>
+				  <li>React</li>
+				  <li>JavaScript</li>
+                  <li>Knockout</li>
+				  <li>Tailwind</li>
+                </ul>
+              </div>
 
-			for (i = 0; i < acc.length; i++) {
-			  acc[i].addEventListener("click", function() {
-			    this.classList.toggle("active");
-			    var panel = this.nextElementSibling;
-			    if (panel.style.maxHeight){
-			      panel.style.maxHeight = null;
-			    } else {
-			      panel.style.maxHeight = panel.scrollHeight + "px";
-			    }
-			  });
-			}
-		</script>
-	</body>
+			  <div>
+                <h3>Backend</h3>
+                <ul class="columns">
+                  <li>Ruby</li>
+				  <li>Node.js</li>
+                  <li>Python</li>
+                </ul>
+              </div>
+
+			  <div>
+                <h3>Testing</h3>
+                <ul class="columns">
+                  <li>Jest</li>
+                  <li>Cypress</li>
+                  <li>Karma</li>
+                  <li>Jasmine</li>
+				  <li>Liquid</li>
+                </ul>
+              </div>
+
+              <div>
+                <h3>Other Skills and Technologies</h3>
+                <ul class="columns">
+                  <li>MySQL</li>
+				  <li>GraphQL</li>
+                  <li>Grafana</li>
+				  <li>Figma</li>
+				  <li>Miro</li>
+                  <li>Software and Design Architectures</li>
+                  <li>Teamwork and Self-Directed Learning</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/fold.js"></script>
+  </body>
 </html>

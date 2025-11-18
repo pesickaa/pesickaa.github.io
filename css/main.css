@@ -1,81 +1,114 @@
+html {
+  font-size: 16px;
+}
+
+/* Heading 1 with a larger font size */
+h1 {
+  font-size: 2.5rem; /* 2.5 times the root font size (16px * 2.5 = 40px) */
+}
+
+/* Body text */
+p {
+  font-size: 1rem; /* 16px */
+  line-height: 1.5;
+}
+
 .HolyGrail {
-	font-family: Helvetica, sans-serif;
-	background-color: #eee;
-	display: flex;
-	flex-direction: column;
-	height: 100%;
-	margin: 0;
+  font-family: Helvetica, sans-serif;
+  background-color: #aaa;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
 }
 
 .fold {
-	background-color: #fff;
-	cursor: pointer;
-	padding: 18px;
-	width: 100%;
-	border: none;
-	text-align: center;
-	outline: none;
-	font-size: 15px;
-	transition: 0.4s;
+  background-color: #fff;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.rows {
+  display: flex;
+  flex-flow: column;
+}
+
+.columns {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
 }
 
 .panel {
-	padding: 0 18px;
-	background-color: white;
-	max-height: 0;
-	overflow: hidden;
-	transition: max-height 0.6s ease-out;
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.6s ease-out;
 }
 
-h2, h4 {
-	margin: 6px;
-	text-align: center;
+h2,
+h4 {
+  margin: 6px;
+  text-align: center;
 }
 
 h3 {
-	font-size: 16px;
-	margin-bottom: 6px; 
+  font-size: 16px;
+  margin-bottom: 6px;
 }
 
 h4 {
-	border-bottom: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
 #about small {
-	text-align: center;	
+  text-align: center;
 }
 
 .header {
-	text-align: center;
-	height:60px;
-	background-color: #fff;
-	box-shadow: 0px 1px #ddd;
-	z-index: 1;
+  text-align: center;
+  height: fit-content;
+  background-color: #fff;
+  box-shadow: 0px 1px #ddd;
+  z-index: 1;
+  padding: 10px 0;
+}
+
+.header h1 {
+  margin: 0;
 }
 
 .center {
-	display: flex;
-	flex: 1 0 auto;
-	flex-direction: column;
-	padding: var(--space);
-	margin: auto;
-	max-width: 900px;
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+  padding: var(--space);
+  margin: auto;
+  max-width: 900px;
 }
 
 .box {
-	padding: 10px;
+  padding: 10px;
 }
 
 .content {
-	margin-top: var(--space);
-	background-color: #fff;
+  margin-top: var(--space);
+  background-color: #fff;
 }
 
 .section {
-	border: 1px solid #eee;
-	border-radius: 13px;
-	padding: 10px;
-	margin: 10px 0 10px 0;
-	width: auto;
-	box-shadow:0px 1px 5px 0px rgba(0, 66, 128, 0.2);
+  border: 1px solid #eee;
+  border-radius: 13px;
+  padding: 10px;
+  margin: 10px 0 10px 0;
+  width: auto;
+  box-shadow: 0px 1px 5px 0px rgba(0, 66, 128, 0.2);
 }
